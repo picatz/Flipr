@@ -39,7 +39,6 @@ class Flipr
   def put_table
     @puts.tables.sample
   end
-
 end
 
 class Flip_Tables
@@ -84,10 +83,8 @@ class Put_Tables
   def default_tables
     [ "┬──┬ノ['-' ノ ]",
       "┬──┬ノ[･ω･ ノ ]",
-      "┬──┬ノ[ﾟ~ﾟ ノ ]",
-      "┬──┬ノ[ﾟO ﾟノ ]",
+      "┬──┬ノ['~' ノ ]",
       "┬──┬ノ[`-` ノ ]",
-      "┬──┬ノ[ﾟ▽ ﾟノ ]"]
   end
 end
 
