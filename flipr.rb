@@ -40,19 +40,6 @@ class Flipr
     @puts.tables.sample
   end
 
-  def good_exit?
-    if `echo $?`.strip == "0"
-      true
-    else
-      false
-    end
-  end
-
-  def respond
-    unless good_exit?
-      flip_table
-    end
-  end
 end
 
 class Flip_Tables
