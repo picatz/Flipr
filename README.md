@@ -11,7 +11,7 @@ You're going to need to install the following ruby gems:
 
 ## Screen Shot
 
-![lolololol](http://imgur.com/a/8Izhg)
+![lolololol](http://i.imgur.com/YdLBtTx.png)
 
 ## Usage
 
