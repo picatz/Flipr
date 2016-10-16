@@ -9,6 +9,10 @@ TODO:
 You're going to need to install the following ruby gems:
 `$ gem install trollop colorize`
 
+## Screen Shot
+
+![lolololol](http://imgur.com/a/8Izhg)
+
 ## Usage
 
 ```
