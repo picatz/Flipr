@@ -16,7 +16,7 @@ TODO:
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'vmstator'
+gem 'flipr'
 ```
 
 And then execute:
@@ -27,7 +27,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install vmstator
+    $ gem install flipr 
 
 ## Usage
 
