@@ -1,0 +1,55 @@
+#!/usr/bin/env ruby
+
+require 'colorize'
+require 'yaml'
+require 'trollop'
+
+require_relative '../lib/flipr.rb'
+
+foo = ARGV[0] || ARGV[0] = '-h'
+
+opts = Trollop::options do
+	banner "FLIPR".blue.bold + " [ ╯ ".green.bold + "'".red.bold + " □".green.bold + "'".red.bold + "]╯︵┻━┻)".green.bold
+	opt :flip, "Flip a table"
+	opt :put, "Put a table"
+	opt :Flip_config, "Flip table configuration", :type => :string
+	opt :Put_config, "Put table configuration", :type => :string
+	opt :lol, "Rainbow support, because we need it"
+end
+
+if opts[:lol]
+	require 'lolize'
+	class Lolize::Colorizer
+		def change_freq
+			@freq = "0.#{rand(1..9)}".to_f
+		end
+		def change_spread
+			@spread = "#{rand(1..9)}.0".to_f
+		end
+	end
+	colorizer = Lolize::Colorizer.new
+	colorizer.change_freq
+	colorizer.change_spread
+end
+
+opts[:configs] = []
+opts[:configs] << opts[:Flip_config] if opts[:Flip_config]
+opts[:configs] << opts[:Put_config] if opts[:Put_config]
+
+flipr = Flipr.new(opts)
+
+if opts[:flip]
+	if opts[:lol]
+		colorizer.write flipr.flip_table + "\n"
+	else
+		puts flipr.flip_table
+	end
+end
+
+if opts[:put]
+	if opts[:lol]
+		colorizer.write flipr.put_table + "\n"
+	else
+		puts flipr.put_table
+	end
+end

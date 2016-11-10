@@ -5,13 +5,29 @@ A simple, configurable flip table / put table command-line application with opti
 TODO: 
 * Stuff.
 
-## Installation
-You're going to need to install the following ruby gems:
-`$ gem install trollop colorize`
-
 ## Screen Shot
 
 ![lolololol](http://i.imgur.com/YdLBtTx.png)
+
+## Installation
+
+### Gemfile
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'vmstator'
+```
+
+And then execute:
+
+    $ bundle
+
+### Gem Install
+
+Or install it yourself as:
+
+    $ gem install vmstator
 
 ## Usage
 
@@ -27,25 +43,36 @@ FLIPR [ ╯ ' □']╯︵┻━┻)
 
 ### Flip Table
 
-`$ ruby flipr.rb -f`
+```
+$ ruby flipr.rb -f
+````
 
 ### Put Table
 
-`$ ruby flipr.rb -p`
+```
+$ ruby flipr.rb -p
+```
 
 ### Specify your own Flips
 
-`$ ruby flipr.rb -f -F flips.yaml`
+```
+$ ruby flipr.rb -f -F flips.yaml
+```
 
 ### Help
 
 Program should default to a help menu when no flags are specified.
 
-`$ ruby flipr.rb`
+```
+$ ruby flipr.rb
+```
 
 You can also ask for help.
 
-`$ ruby flipr.rb -h`
+```
+$ ruby flipr.rb -h
+```
 
-### Credits
-Kent 'picat' Gruber
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
