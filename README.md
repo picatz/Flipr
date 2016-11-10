@@ -7,7 +7,7 @@ TODO:
 
 ## Screen Shot
 
-![lolololol](http://i.imgur.com/YdLBtTx.png)
+![lolololol](http://i.imgur.com/QmacObG.png)
 
 ## Installation
 
