@@ -11,23 +11,17 @@ TODO:
 
 ## Installation
 
-### Gemfile
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'flipr'
-```
-
-And then execute:
-
-    $ bundle
-
 ### Gem Install
 
 Or install it yourself as:
 
     $ gem install flipr 
+
+### macOS Gem Install
+
+By default, macOS will not install the command-line application in the `/usr/bin/` directory; and if you're not using something like RVM and you're getting a permissions error, then this should work:
+
+    $ sudo gem install -n /usr/local/bin flipr 
 
 ## Usage
 
