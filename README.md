@@ -13,7 +13,7 @@ TODO:
 
 ### Gem Install
 
-Or install it yourself as:
+Since flipr is a gem, it's simple to install:
 
     $ gem install flipr 
 
